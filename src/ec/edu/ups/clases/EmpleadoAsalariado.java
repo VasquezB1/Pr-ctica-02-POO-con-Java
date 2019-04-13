@@ -19,13 +19,13 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
     private int horasTrabajo;
     private int codigo;
     private double salario;
+    private String telefono;
 
     public EmpleadoAsalariado() {
     }
 
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
-
     public EmpleadoAsalariado(int horasTrabajo, int codigo, double salario, String empresa, double sueldoExtra, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
         super(empresa, sueldoExtra, fechaContratacion, vacaciones, nombre, cedula, edad, genero);
         this.horasTrabajo = horasTrabajo;
@@ -37,6 +37,7 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
         this.horasTrabajo = horasTrabajo;
         this.codigo = codigo;
         this.salario = salario;
+
     }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -73,35 +74,30 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
     }
 /////////////////////////////////////////////////////////////////////////////////
     //Interface
-
-    
     @Override
     public String comer() {
         return "\tEmpleado " + this.getNombre() + " está comiendo";
     }
 
-  
     @Override
     public String descansar() {
         return "\tEmpleado " + this.getNombre() + " está descansando";
     }
 
-   
     @Override
     public String dormir() {
         return "\tEmpleado " + this.getNombre() + " está durmiendo";
     }
-    
+
     public String verTelevision() {
         return "\tEmpleado " + super.getNombre() + " está respondiendo mensajes";
     }
-    
+
     public String verCelular() {
         return "\tEmpleado " + super.getNombre() + " está viendo su celular.";
     }
-    
+
     public String viajar() {
         return "\tEmpleado " + super.getNombre() + " esta viajando";
     }
-
 }

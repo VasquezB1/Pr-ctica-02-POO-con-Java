@@ -6,12 +6,15 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Interface;
 import java.util.Date;
 
+
 /**
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2 ----------Class Hija 1 de Empleados----------
+ * @version IDE 8.2 
+ * ----------Class Hija 1 de Empleados----------
  */
+
 public final class Taxista extends Empleados implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
@@ -106,5 +109,4 @@ public final class Taxista extends Empleados implements Interface {
     public String toString() {
         return super.toString() + "\nTaxista:\n{" + "numeroAuto=" + numeroAuto + ", codigo=" + codigo + ", turno=" + turno + ", telefono=" + telefono + '}';
     }
-
 }

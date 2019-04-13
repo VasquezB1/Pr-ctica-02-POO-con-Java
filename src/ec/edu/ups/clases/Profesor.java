@@ -12,6 +12,7 @@ import ec.edu.ups.interfaces.Interface;
  * @version IDE 8.2
  * ----------Class Padre 2----------
  */
+
 public abstract class Profesor extends Persona implements Interface{
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
@@ -97,5 +98,4 @@ public abstract class Profesor extends Persona implements Interface{
     public String leer(){
         return "El profesional " + super.getNombre() + " está leyendo";
     }
-    
 }

@@ -20,6 +20,7 @@ public final class ProfesorSustituto extends Profesor implements Interface {
     private int cursoSustituto;
     private double sueldo;
 
+
 /////////////////////////////////////////////////////////////////////////////////
     //Interface
     @Override
@@ -94,7 +95,7 @@ public final class ProfesorSustituto extends Profesor implements Interface {
     @Override
     public String toString() {
         return super.toString()+ "ProfesorSustituto{" + "horasSustituto=" + horasSustituto + ", profesorSustituto=" + profesorSustituto + ", cursoSustituto=" + cursoSustituto + ", sueldo=" + sueldo + '}';
-    }
-
     
 }
+}
+

@@ -9,13 +9,19 @@ import java.util.Date;
 /**
  *
  * @author Byron PC
- * @since 12-April-2019
- * @version IDE 8.2 ----------Class Padre 1----------
+ * @since 12-April-2019 <<<<<<< HEAD @v ersion IDE 8.2 ----------Class Padre
+ * 1----------
  */
 public abstract class Empleados extends Persona {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
 
+    /*
+ * @version IDE 8.2
+ * ----------Class Padre 1----------
+     */
+////////////////////////////////////////////////////////////////////////////////
+    ///////////////////Declaracion de Variables    
     private String empresa;
     private double sueldoExtra;
     private Date fechaContratacion;
@@ -34,7 +40,6 @@ public abstract class Empleados extends Persona {
         this.fechaContratacion = fechaContratacion;
         this.vacaciones = vacaciones;
     }
-
 
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
@@ -69,6 +74,8 @@ public abstract class Empleados extends Persona {
     public void setVacaciones(Date vacaciones) {
         this.vacaciones = vacaciones;
     }
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
 
     public String Descanso() {
         return "Los Empleados " + super.getNombre() + " tienen descanso";
@@ -105,5 +112,4 @@ public abstract class Empleados extends Persona {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         return super.toString() + "\nEmpleados:\n{" + "empresa=" + empresa + ", sueldo=" + sueldoExtra + ", fechaContratacion= " + formato.format(fechaContratacion.getTime()) + ", vacaciones= " + formato2.format(vacaciones.getTime()) + '}';
     }
-
 }

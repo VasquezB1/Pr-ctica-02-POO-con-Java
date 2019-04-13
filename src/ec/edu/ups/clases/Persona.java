@@ -14,6 +14,8 @@ public class Persona {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
 
+
+
     private String nombre;
     private String cedula;
     private int edad;
@@ -33,6 +35,7 @@ public class Persona {
     }
 
     
+
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set    
     public String getNombre() {

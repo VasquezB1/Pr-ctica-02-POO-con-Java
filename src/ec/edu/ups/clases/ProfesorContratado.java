@@ -10,9 +10,17 @@ import java.util.Date;
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2 ----------Class Hija 3 de Profesor----------
+ * @version IDE 8.2
+ * ----------Class Hija 3 de Profesor----------
+
  */
+
 public final class ProfesorContratado extends Profesor implements Interface {
+////////////////////////////////////////////////////////////////////////////////
+    ///////////////////Declaracion de Variables    
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
 
