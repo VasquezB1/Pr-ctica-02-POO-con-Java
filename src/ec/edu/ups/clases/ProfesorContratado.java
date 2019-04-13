@@ -4,6 +4,7 @@
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Interface;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -12,11 +13,7 @@ import java.util.Date;
  * @since 12-April-2019
  * @version IDE 8.2
  * ----------Class Hija 3 de Profesor----------
-
-
->>>>>>> origin/master
  */
-
 
 public final class ProfesorContratado extends Profesor implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
@@ -29,9 +26,15 @@ public final class ProfesorContratado extends Profesor implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
 
-    public ProfesorContratado(String nombre, String cedula, int edad, String genero) {
-        super(nombre, cedula, edad, genero);
+    public ProfesorContratado(Date fechaContratacion, int horasContratado, Date evaluaciones, int cursoACargo, String materia, String colegio, int codigo, String turno, String nombre, String cedula, int edad, String genero) {
+        super(materia, colegio, codigo, turno, nombre, cedula, edad, genero);
+        this.fechaContratacion = fechaContratacion;
+        this.horasContratado = horasContratado;
+        this.evaluaciones = evaluaciones;
+        this.cursoACargo = cursoACargo;
     }
+
+ 
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
 
@@ -66,41 +69,49 @@ public final class ProfesorContratado extends Profesor implements Interface {
     public void setCursoACargo(int cursoACargo) {
         this.cursoACargo = cursoACargo;
     }
-/////////////////////////////////////////////////////////////////////////////////
-    //To String
 
-    @Override
-    public String toString() {
-        return super.toString()+ "ProfesorContratado{" + "fechaContratacion=" + fechaContratacion + ", horasContratado=" + horasContratado + ", evaluaciones=" + evaluaciones + ", cursoACargo=" + cursoACargo + '}';
-    }
 /////////////////////////////////////////////////////////////////////////////////
     //Interface
 
     @Override
     public String comer() {
-        return "La persona " + this.getNombre() + " está comiendo";
+        return "\tEl profesor " + this.getNombre() + " está comiendo";
     }
 
     @Override
     public String descansar() {
-        return "La persona " + this.getNombre() + " está descansando";
+        return "\tEl profesor" + this.getNombre() + " está descansando";
     }
 
     @Override
     public String dormir() {
-        return "La persona " + this.getNombre() + " está durmiendo";
+        return "\tEl profesor " + this.getNombre() + " está durmiendo";
     }
 
     public String exponer() {
-        return "El preadolescente " + super.getNombre() + " está exponiendo";
+        return "\tEl profesor " + super.getNombre() + " está exponiendo";
     }
 
     public String vestirse() {
-        return "El preadolescente " + super.getNombre() + " está vistiendose";
+        return "\tEl profesor " + super.getNombre() + " está vistiendose";
     }
 
     public String caminar() {
-        return "El preadolescente " + super.getNombre() + " está caminando";
+        return "\tEl profesor " + super.getNombre() + " está caminando";
     }
  
+/////////////////////////////////////////////////////////////////////////////////
+    //To String
+
+    @Override
+    public String toString() {
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat formato2 = new SimpleDateFormat("dd/MM/yyyy");
+        return super.toString()+ "\nProfesor Contratado:\n{" + "fechaContratacion=" + formato.format(fechaContratacion.getTime()) + ", horasContratado=" + horasContratado + ", evaluaciones=" + formato2.format(evaluaciones.getTime()) + ", cursoACargo=" + cursoACargo + '}';
+    }    
+
+    @Override
+    public String responderMensajes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

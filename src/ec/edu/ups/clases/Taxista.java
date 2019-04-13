@@ -24,15 +24,10 @@ public final class Taxista extends Empleados implements Interface {
     private int codigo;
     private String turno;
     private String telefono;
-
-
     public Taxista() {
-
     }
-  
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
-
     public Taxista(int numeroAuto, int codigo, String turno, String telefono, String empresa, double sueldo, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
         super(empresa, sueldo, fechaContratacion, vacaciones, nombre, cedula, edad, genero);
         this.numeroAuto = numeroAuto;
@@ -40,8 +35,7 @@ public final class Taxista extends Empleados implements Interface {
         this.turno = turno;
         this.telefono = telefono;
     }
-    
-    
+
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
     public int getNumeroAuto() {
@@ -80,29 +74,29 @@ public final class Taxista extends Empleados implements Interface {
 
     @Override
     public String comer() {
-        return "El taxista " + this.getNombre() + " está comiendo";
+        return "\tEl taxista " + this.getNombre() + " está comiendo";
     }
 
     @Override
     public String descansar() {
-        return "El taxista " + this.getNombre() + " está descansando";
+        return "\tEl taxista " + this.getNombre() + " está descansando";
     }
 
     @Override
     public String dormir() {
-        return "El taxista " + this.getNombre() + " está durmiendo";
+        return "\tEl taxista " + this.getNombre() + " está durmiendo";
     }
 
     public String trabajar() {
-        return "El taxista " + this.getNombre() + " está trabajando";
+        return "\tEl taxista " + this.getNombre() + " está trabajando";
     }
 
     public String contestar() {
-        return "El taxista " + this.getNombre() + " está contestando llamadas";
+        return "\tEl taxista " + this.getNombre() + " está contestando llamadas";
     }
 
     public String verWhatsapp() {
-        return "El taxista " + this.getNombre() + " está conversando por Whatsapp";
+        return "\tEl taxista " + this.getNombre() + " está conversando por Whatsapp";
     }
 /////////////////////////////////////////////////////////////////////////////////
     //To String
@@ -110,5 +104,10 @@ public final class Taxista extends Empleados implements Interface {
     @Override
     public String toString() {
         return super.toString() + "\nTaxista:\n{" + "numeroAuto=" + numeroAuto + ", codigo=" + codigo + ", turno=" + turno + ", telefono=" + telefono + '}';
+    }
+
+    @Override
+    public String verTelevision() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

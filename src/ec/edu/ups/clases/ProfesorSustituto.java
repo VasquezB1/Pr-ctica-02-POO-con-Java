@@ -16,47 +16,22 @@ public final class ProfesorSustituto extends Profesor implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
     private int horasSustituto;
-    private String profesorSustituto;
+    private String experiencia;
     private int cursoSustituto;
     private double sueldo;
-
-/////////////////////////////////////////////////////////////////////////////////
-    //Interface
-    @Override
-    public String comer() {
-       return "La persona " + this.getNombre() + " está comiendo";
-    }
-
-    @Override
-    public String descansar() {
-        return "La persona " + this.getNombre() + " está descansando";
-    }
-
-    @Override
-    public String dormir() {
-        return "La persona " + this.getNombre() + " está durmiendo";
-    }
-     public String trabajar() {
-        return "La persona " + this.getNombre() + " está trabajando";
-    }
-      public String moverse(){
-        return "La persona " + this.getNombre() + " está moviéndose";
-    }
-      public String divertirse(){
-        return "La persona no profesional " + super.getNombre() + " está escribiendo algo.";
-    }
-    
-    
-     
+  
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
-
-    public ProfesorSustituto(String nombre, String cedula, int edad, String genero) {
-        super(nombre, cedula, edad, genero);
+    public ProfesorSustituto(int horasSustituto, String experiencia, int cursoSustituto, double sueldo, String materia, String colegio, int codigo, String turno, String nombre, String cedula, int edad, String genero) { 
+        super(materia, colegio, codigo, turno, nombre, cedula, edad, genero);
+        this.horasSustituto = horasSustituto;
+        this.experiencia = experiencia;
+        this.cursoSustituto = cursoSustituto;
+        this.sueldo = sueldo;
     }
-////////////////////////////////////////////////////////////////////////////////
-    //Get and Set   
 
+////////////////////////////////////////////////////////////////////////////////
+    //Get and Set
     public int getHorasSustituto() {
         return horasSustituto;
     }
@@ -65,14 +40,15 @@ public final class ProfesorSustituto extends Profesor implements Interface {
         this.horasSustituto = horasSustituto;
     }
 
-    public String getProfesorSustituto() {
-        return profesorSustituto;
+    public String getExperiencia() {
+        return experiencia;
     }
 
-    public void setProfesorSustituto(String profesorSustituto) {
-        this.profesorSustituto = profesorSustituto;
+    public void setExperiencia(String experiencia) {
+        this.experiencia = experiencia;
     }
 
+ 
     public int getCursoSustituto() {
         return cursoSustituto;
     }
@@ -88,13 +64,49 @@ public final class ProfesorSustituto extends Profesor implements Interface {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+    
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
+    @Override
+    public String comer() {
+       return "\tLa maestra sustituta " + this.getNombre() + " está comiendo";
+    }
+
+    @Override
+    public String descansar() {
+        return "\tLa maestra sustituta " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "\tLa maestra sustituta " + this.getNombre() + " está durmiendo";
+    }
+     public String trabajar() {
+        return "\tLa maestra sustituta " + this.getNombre() + " está trabajando";
+    }
+      public String moverse(){
+        return "\tLa maestra sustituta " + this.getNombre() + " está moviéndose";
+    }
+      public String divertirse(){
+        return "\tLa maestra sustituta " + super.getNombre() + " está escribiendo algo.";
+    }
+        
 /////////////////////////////////////////////////////////////////////////////////
     //To String
 
     @Override
     public String toString() {
-        return super.toString()+ "ProfesorSustituto{" + "horasSustituto=" + horasSustituto + ", profesorSustituto=" + profesorSustituto + ", cursoSustituto=" + cursoSustituto + ", sueldo=" + sueldo + '}';
+        return super.toString() + "\nProfesorSustituto:\n[" + "horasSustituto=" + horasSustituto + ", experiencia=" + experiencia + ", cursoSustituto=" + cursoSustituto + ", sueldo=" + sueldo + '}';
     }
+////////////////////////////////////////////////////////////////////////////////////////
+
+    @Override
+    public String responderMensajes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+  
+
+    
 }
 
 

@@ -12,8 +12,6 @@ import ec.edu.ups.interfaces.Interface;
  * @version IDE 8.2
  * ----------Class Padre 2----------
  */
-
-
 public abstract class Profesor extends Persona implements Interface{
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -29,9 +27,15 @@ public abstract class Profesor extends Persona implements Interface{
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
 
-    public Profesor(String nombre, String cedula, int edad, String genero) {
+    public Profesor(String materia, String colegio, int codigo, String turno, String nombre, String cedula, int edad, String genero) {
         super(nombre, cedula, edad, genero);
+        this.materia = materia;
+        this.colegio = colegio;
+        this.codigo = codigo;
+        this.turno = turno;
     }
+
+   
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
 
@@ -66,13 +70,7 @@ public abstract class Profesor extends Persona implements Interface{
     public void setTurno(String turno) {
         this.turno = turno;
     }
-/////////////////////////////////////////////////////////////////////////////////
-    //To String
 
-    @Override
-    public String toString() {
-        return super.toString() + "Profesor{" + "materia=" + materia + ", colegio=" + colegio + ", codigo=" + codigo + ", turno=" + turno + '}';
-    }
 /////////////////////////////////////////////////////////////////////////////////
     //Interface
     @Override
@@ -100,5 +98,18 @@ public abstract class Profesor extends Persona implements Interface{
     public String leer(){
         return "El profesional " + super.getNombre() + " está leyendo";
     }
+////////////////////////////////////////////////////////////////////////////////   
+    /**
+     * respondermensajes metodo abstracto
+     * @return texto
+     */
+    public abstract String responderMensajes();
+    
+/////////////////////////////////////////////////////////////////////////////////
+    //To String
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nProfesor:\n{" + "materia=" + materia + ", colegio=" + colegio + ", codigo=" + codigo + ", turno=" + turno + '}';
+    }
 }

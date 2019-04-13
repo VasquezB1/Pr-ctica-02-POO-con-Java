@@ -13,11 +13,6 @@ package ec.edu.ups.clases;
 public class Persona {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
-
-
-
-
-
     private String nombre;
     private String cedula;
     private int edad;
@@ -35,9 +30,6 @@ public class Persona {
         this.edad = edad;
         this.genero = genero;
     }
-
-    
-
 
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set    
@@ -72,7 +64,8 @@ public class Persona {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
     public String comer() {
         return "La persona " + this.getNombre() + " está comiendo";
     }

@@ -12,9 +12,9 @@ import java.util.Date;
  *
  * @author Byron PC
  * @since 12-April-2019
-<<<<<<< HEAD
  * @version IDE 8.2 
  * ----------Class Hija 2 de Empleados----------
+ * 
  */
 public final class EmpleadoAsalariado extends Empleados implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
@@ -75,13 +75,7 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-/////////////////////////////////////////////////////////////////////////////////
-    //To String
 
-    @Override
-    public String toString() {
-        return super.toString() + "\nEmpleadoAsalariado:\n{" + "horasTrabajo=" + horasTrabajo + ", codigo=" + codigo + ", salario=" + salario + '}';
-    }
 /////////////////////////////////////////////////////////////////////////////////
     //Interface
     @Override
@@ -110,4 +104,12 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
     public String viajar() {
         return "\tEmpleado " + super.getNombre() + " esta viajando";
     }
+    
+/////////////////////////////////////////////////////////////////////////////////
+    //To String
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nEmpleadoAsalariado:\n{" + "horasTrabajo=" + horasTrabajo + ", codigo=" + codigo + ", salario=" + salario + '}';
+    }    
 }

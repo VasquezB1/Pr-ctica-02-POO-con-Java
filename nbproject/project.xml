@@ -12,9 +12,21 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>abstracto</word>
+            <word>Aqui</word>
+            <word>del</word>
+            <word>demostra</word>
+            <word>demostrará</word>
             <word>Empleados</word>
+            <word>funcionamiento</word>
             <word>Hija</word>
+            <word>metodo</word>
+            <word>pretende</word>
             <word>Profesor</word>
+            <word>programa</word>
+            <word>respondermensajes</word>
+            <word>se</word>
+            <word>texto</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

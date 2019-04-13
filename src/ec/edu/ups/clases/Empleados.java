@@ -10,7 +10,8 @@ import java.util.Date;
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2 ----------Class Padre * 1----------
+ * @version IDE 8.2 
+ * ----------Class Padre * 1----------
  */
 public abstract class Empleados extends Persona {
 ////////////////////////////////////////////////////////////////////////////////
@@ -97,6 +98,12 @@ public abstract class Empleados extends Persona {
     public String dormir() {
         return "La persona " + this.getNombre() + " está durmiendo";
     }
+/////////////////////////////////////////////////////////////////////////////////    
+    /**
+     * verTelevision metodo abstracto
+     * @return texto
+     */
+    public abstract String verTelevision();
 /////////////////////////////////////////////////////////////////////////////////
     //To String
 
