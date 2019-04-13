@@ -12,7 +12,9 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Empleados</word>
             <word>Hija</word>
+            <word>Profesor</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
