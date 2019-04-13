@@ -4,17 +4,14 @@
 package ec.edu.ups.pruebas;
 
 import ec.edu.ups.clases.EmpleadoAsalariado;
-import ec.edu.ups.clases.Empleados;
-import ec.edu.ups.clases.Profesor;
-import ec.edu.ups.clases.ProfesorContratado;
-import ec.edu.ups.clases.ProfesorSustituto;
-import ec.edu.ups.clases.Taxista;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
+import ec.edu.ups.clases.ProfesorContratado;
+import ec.edu.ups.clases.ProfesorSustituto;
+import ec.edu.ups.clases.Taxista;
 
-/**
- *
+ /*
  * @author Byron PC
  * @since 12-April-2019
  * @version IDE 8.2 ----------Interfaz----------
@@ -26,7 +23,7 @@ public class Prueba {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
         GregorianCalendar fechacontratacion = new GregorianCalendar(1997,3,16);
         GregorianCalendar vacaciones = new GregorianCalendar(2002,3,16);
         GregorianCalendar contratotaxi = new GregorianCalendar(2005,0,18);
@@ -49,9 +46,5 @@ public class Prueba {
         System.out.println("\t"+wade.dormir());
         System.out.println("\t"+wade.verWhatsapp());
         System.out.println("\t"+wade.trabajar());
-        
-        
-
     }
-
 }

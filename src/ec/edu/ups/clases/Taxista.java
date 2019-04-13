@@ -4,6 +4,7 @@
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Interface;
+
 import java.util.Date;
 
 
@@ -18,11 +19,12 @@ import java.util.Date;
 public final class Taxista extends Empleados implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
-
+   
     private int numeroAuto;
     private int codigo;
     private String turno;
     private String telefono;
+
 
     public Taxista() {
 

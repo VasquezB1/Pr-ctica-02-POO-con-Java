@@ -16,6 +16,8 @@ public class Persona {
 
 
 
+
+
     private String nombre;
     private String cedula;
     private int edad;
@@ -35,6 +37,7 @@ public class Persona {
     }
 
     
+
 
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set    
@@ -89,5 +92,4 @@ public class Persona {
         
         return "Persona:\n{" + "nombre=" + nombre + ", cedula=" + cedula + ", edad=" + edad + ", genero=" + genero + '}';
     }
-
 }

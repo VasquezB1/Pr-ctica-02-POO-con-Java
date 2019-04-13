@@ -9,19 +9,13 @@ import java.util.Date;
 /**
  *
  * @author Byron PC
- * @since 12-April-2019 <<<<<<< HEAD @v ersion IDE 8.2 ----------Class Padre
- * 1----------
+ * @since 12-April-2019
+ * @version IDE 8.2 ----------Class Padre * 1----------
  */
 public abstract class Empleados extends Persona {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
 
-    /*
- * @version IDE 8.2
- * ----------Class Padre 1----------
-     */
-////////////////////////////////////////////////////////////////////////////////
-    ///////////////////Declaracion de Variables    
     private String empresa;
     private double sueldoExtra;
     private Date fechaContratacion;

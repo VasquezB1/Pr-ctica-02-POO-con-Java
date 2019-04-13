@@ -6,11 +6,15 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Interface;
 import java.util.Date;
 
+
+
 /**
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2 ----------Class Hija 2 de Empleados----------
+<<<<<<< HEAD
+ * @version IDE 8.2 
+ * ----------Class Hija 2 de Empleados----------
  */
 public final class EmpleadoAsalariado extends Empleados implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
@@ -21,11 +25,17 @@ public final class EmpleadoAsalariado extends Empleados implements Interface {
     private double salario;
     private String telefono;
 
+
     public EmpleadoAsalariado() {
     }
 
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
+    
+    public EmpleadoAsalariado(String empresa, double sueldoExtra, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
+        super(empresa, sueldoExtra, fechaContratacion, vacaciones, nombre, cedula, edad, genero);
+    }
+
     public EmpleadoAsalariado(int horasTrabajo, int codigo, double salario, String empresa, double sueldoExtra, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
         super(empresa, sueldoExtra, fechaContratacion, vacaciones, nombre, cedula, edad, genero);
         this.horasTrabajo = horasTrabajo;

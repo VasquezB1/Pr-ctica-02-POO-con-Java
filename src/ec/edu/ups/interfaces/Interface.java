@@ -13,12 +13,10 @@ package ec.edu.ups.interfaces;
 public interface Interface {
 ////////////////////////////////////////////////////////////////////////////////
     //Métodos Abstractos en la interface
-
     public abstract String comer();
     
     public abstract String descansar();
     
     public abstract String dormir();
 
-    
 }

@@ -13,16 +13,14 @@ import java.util.Date;
  * @version IDE 8.2
  * ----------Class Hija 3 de Profesor----------
 
+
+>>>>>>> origin/master
  */
+
 
 public final class ProfesorContratado extends Profesor implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
-    ///////////////////Declaracion de Variables    
-
-
-
-////////////////////////////////////////////////////////////////////////////////
-    ///////////////////Declaracion de Variables    
+    ///////////////////Declaracion de Variables     
 
     private Date fechaContratacion;
     private int horasContratado;
@@ -104,5 +102,5 @@ public final class ProfesorContratado extends Profesor implements Interface {
     public String caminar() {
         return "El preadolescente " + super.getNombre() + " está caminando";
     }
-
+ 
 }
