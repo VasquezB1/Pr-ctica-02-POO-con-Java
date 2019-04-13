@@ -3,34 +3,41 @@
  */
 package ec.edu.ups.clases;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2
- * ----------Class Padre 1----------
- */ 
+ * @version IDE 8.2 ----------Class Padre 1----------
+ */
 public abstract class Empleados extends Persona {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
+
     private String empresa;
-    private double sueldo;
+    private double sueldoExtra;
     private Date fechaContratacion;
     private Date vacaciones;
-    
-    public Empleados(){
-        
+
+    public Empleados() {
+
     }
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
-    public Empleados(String nombre, String cedula, int edad, String genero) {
+
+    public Empleados(String empresa, double sueldoExtra, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
         super(nombre, cedula, edad, genero);
+        this.empresa = empresa;
+        this.sueldoExtra = sueldoExtra;
+        this.fechaContratacion = fechaContratacion;
+        this.vacaciones = vacaciones;
     }
+
+
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
-
     public String getEmpresa() {
         return empresa;
     }
@@ -39,12 +46,12 @@ public abstract class Empleados extends Persona {
         this.empresa = empresa;
     }
 
-    public double getSueldo() {
-        return sueldo;
+    public double getSueldoExtra() {
+        return sueldoExtra;
     }
 
-    public void setSueldo(double sueldo) {
-        this.sueldo = sueldo;
+    public void setSueldoExtra(double sueldoExtra) {
+        this.sueldoExtra = sueldoExtra;
     }
 
     public Date getFechaContratacion() {
@@ -62,13 +69,41 @@ public abstract class Empleados extends Persona {
     public void setVacaciones(Date vacaciones) {
         this.vacaciones = vacaciones;
     }
+
+    public String Descanso() {
+        return "Los Empleados " + super.getNombre() + " tienen descanso";
+    }
+
+    public String Almuerzo() {
+        return "Los Empleados " + super.getNombre() + " estan en el almuerzo";
+    }
+
+    public String Turno() {
+        return "Los Empleados " + super.getNombre() + " estan cambiando de turno";
+    }
+
+    @Override
+    public String comer() {
+        return "La persona " + this.getNombre() + " está comiendo";
+    }
+
+    @Override
+    public String descansar() {
+        return "La persona " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "La persona " + this.getNombre() + " está durmiendo";
+    }
 /////////////////////////////////////////////////////////////////////////////////
     //To String
 
     @Override
     public String toString() {
-        return "Empleados{" + "empresa=" + empresa + ", sueldo=" + sueldo + ", fechaContratacion=" + fechaContratacion + ", vacaciones=" + vacaciones + '}';
+        SimpleDateFormat formato2 = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        return super.toString() + "\nEmpleados:\n{" + "empresa=" + empresa + ", sueldo=" + sueldoExtra + ", fechaContratacion= " + formato.format(fechaContratacion.getTime()) + ", vacaciones= " + formato2.format(vacaciones.getTime()) + '}';
     }
-    
-    
+
 }

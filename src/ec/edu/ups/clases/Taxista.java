@@ -4,48 +4,41 @@
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Interface;
+import java.util.Date;
 
 /**
  *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2
- * ----------Class Hija 1 de Empleados----------
+ * @version IDE 8.2 ----------Class Hija 1 de Empleados----------
  */
-public final class Taxista extends Empleados implements Interface{
+public final class Taxista extends Empleados implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
+
     private int numeroAuto;
     private int codigo;
     private String turno;
     private String telefono;
-////////////////////////////////////////////////////////////////////////////////
-   ////////////////////Metodos Abstractos
-    
-    @Override
-    public void comer() {
-        System.out.println("Clase Taxista: ");
-        System.out.println("\t El taxista " + this.getNombre() + "esta comiendo");
-    }
 
-    @Override
-    public void descansar() {
-       System.out.println("\t El taxista " + this.getNombre() + "esta descansando");
-    }
+    public Taxista() {
 
-    @Override
-    public void dormir() {
-       System.out.println("\t El taxista " + this.getNombre() + "esta durmiendo");
     }
+  
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
 
-    public Taxista(String nombre, String cedula, int edad, String genero) {
-        super(nombre, cedula, edad, genero);
+    public Taxista(int numeroAuto, int codigo, String turno, String telefono, String empresa, double sueldo, Date fechaContratacion, Date vacaciones, String nombre, String cedula, int edad, String genero) {
+        super(empresa, sueldo, fechaContratacion, vacaciones, nombre, cedula, edad, genero);
+        this.numeroAuto = numeroAuto;
+        this.codigo = codigo;
+        this.turno = turno;
+        this.telefono = telefono;
     }
+    
+    
 ////////////////////////////////////////////////////////////////////////////////
     //Get and Set   
-
     public int getNumeroAuto() {
         return numeroAuto;
     }
@@ -78,12 +71,40 @@ public final class Taxista extends Empleados implements Interface{
         this.telefono = telefono;
     }
 /////////////////////////////////////////////////////////////////////////////////
+    //Interface
+
+    @Override
+    public String comer() {
+        return "El taxista " + this.getNombre() + " está comiendo";
+    }
+
+    @Override
+    public String descansar() {
+        return "El taxista " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "El taxista " + this.getNombre() + " está durmiendo";
+    }
+
+    public String trabajar() {
+        return "El taxista " + this.getNombre() + " está trabajando";
+    }
+
+    public String contestar() {
+        return "El taxista " + this.getNombre() + " está contestando llamadas";
+    }
+
+    public String verWhatsapp() {
+        return "El taxista " + this.getNombre() + " está conversando por Whatsapp";
+    }
+/////////////////////////////////////////////////////////////////////////////////
     //To String
 
     @Override
     public String toString() {
-        return "Taxista{" + "numeroAuto=" + numeroAuto + ", codigo=" + codigo + ", turno=" + turno + ", telefono=" + telefono + '}';
+        return super.toString() + "\nTaxista:\n{" + "numeroAuto=" + numeroAuto + ", codigo=" + codigo + ", turno=" + turno + ", telefono=" + telefono + '}';
     }
 
-    
 }

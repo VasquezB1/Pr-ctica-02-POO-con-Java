@@ -3,18 +3,19 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Interface;
 import java.util.Date;
 
 /**
- * 
+ *
  * @author Byron PC
  * @since 12-April-2019
- * @version IDE 8.2
- * ----------Class Hija 3 de Profesor----------
+ * @version IDE 8.2 ----------Class Hija 3 de Profesor----------
  */
-public final class ProfesorContratado extends Profesor {
+public final class ProfesorContratado extends Profesor implements Interface {
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
+
     private Date fechaContratacion;
     private int horasContratado;
     private Date evaluaciones;
@@ -64,8 +65,36 @@ public final class ProfesorContratado extends Profesor {
 
     @Override
     public String toString() {
-        return "ProfesorContratado{" + "fechaContratacion=" + fechaContratacion + ", horasContratado=" + horasContratado + ", evaluaciones=" + evaluaciones + ", cursoACargo=" + cursoACargo + '}';
+        return super.toString()+ "ProfesorContratado{" + "fechaContratacion=" + fechaContratacion + ", horasContratado=" + horasContratado + ", evaluaciones=" + evaluaciones + ", cursoACargo=" + cursoACargo + '}';
+    }
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
+
+    @Override
+    public String comer() {
+        return "La persona " + this.getNombre() + " está comiendo";
     }
 
-    
+    @Override
+    public String descansar() {
+        return "La persona " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "La persona " + this.getNombre() + " está durmiendo";
+    }
+
+    public String exponer() {
+        return "El preadolescente " + super.getNombre() + " está exponiendo";
+    }
+
+    public String vestirse() {
+        return "El preadolescente " + super.getNombre() + " está vistiendose";
+    }
+
+    public String caminar() {
+        return "El preadolescente " + super.getNombre() + " está caminando";
+    }
+
 }

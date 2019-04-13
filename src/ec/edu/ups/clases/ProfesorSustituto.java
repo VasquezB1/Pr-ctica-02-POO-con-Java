@@ -19,23 +19,35 @@ public final class ProfesorSustituto extends Profesor implements Interface {
     private String profesorSustituto;
     private int cursoSustituto;
     private double sueldo;
-////////////////////////////////////////////////////////////////////////////////
-   ////////////////////Metodos Abstractos
+
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
+    @Override
+    public String comer() {
+       return "La persona " + this.getNombre() + " está comiendo";
+    }
+
+    @Override
+    public String descansar() {
+        return "La persona " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "La persona " + this.getNombre() + " está durmiendo";
+    }
+     public String trabajar() {
+        return "La persona " + this.getNombre() + " está trabajando";
+    }
+      public String moverse(){
+        return "La persona " + this.getNombre() + " está moviéndose";
+    }
+      public String divertirse(){
+        return "La persona no profesional " + super.getNombre() + " está escribiendo algo.";
+    }
     
-    @Override
-    public void comer() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void descansar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void dormir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
+     
 ////////////////////////////////////////////////////////////////////////////////
     //Constructor
 
@@ -81,7 +93,7 @@ public final class ProfesorSustituto extends Profesor implements Interface {
 
     @Override
     public String toString() {
-        return "ProfesorSustituto{" + "horasSustituto=" + horasSustituto + ", profesorSustituto=" + profesorSustituto + ", cursoSustituto=" + cursoSustituto + ", sueldo=" + sueldo + '}';
+        return super.toString()+ "ProfesorSustituto{" + "horasSustituto=" + horasSustituto + ", profesorSustituto=" + profesorSustituto + ", cursoSustituto=" + cursoSustituto + ", sueldo=" + sueldo + '}';
     }
 
     

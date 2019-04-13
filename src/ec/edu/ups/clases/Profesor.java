@@ -3,6 +3,8 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Interface;
+
 /**
  *
  * @author Byron PC
@@ -10,7 +12,7 @@ package ec.edu.ups.clases;
  * @version IDE 8.2
  * ----------Class Padre 2----------
  */
-public abstract class Profesor extends Persona{
+public abstract class Profesor extends Persona implements Interface{
 ////////////////////////////////////////////////////////////////////////////////
     ///////////////////Declaracion de Variables    
     private String materia;
@@ -66,8 +68,34 @@ public abstract class Profesor extends Persona{
 
     @Override
     public String toString() {
-        return "Profesor{" + "materia=" + materia + ", colegio=" + colegio + ", codigo=" + codigo + ", turno=" + turno + '}';
+        return super.toString() + "Profesor{" + "materia=" + materia + ", colegio=" + colegio + ", codigo=" + codigo + ", turno=" + turno + '}';
+    }
+/////////////////////////////////////////////////////////////////////////////////
+    //Interface
+    @Override
+    public String comer() {
+       return "La persona " + this.getNombre() + " está comiendo";
     }
 
+    @Override
+    public String descansar() {
+        return "La persona " + this.getNombre() + " está descansando";
+    }
+
+    @Override
+    public String dormir() {
+        return "La persona " + this.getNombre() + " está durmiendo";
+    }
+     public String escribir(){
+        return "El profesional " + super.getNombre() + " está escribiendo algo.";
+    }
+    
+    public String exponer(){
+        return "El profesional " + super.getNombre() + " está exponiendo.";
+    }
+    
+    public String leer(){
+        return "El profesional " + super.getNombre() + " está leyendo";
+    }
     
 }
