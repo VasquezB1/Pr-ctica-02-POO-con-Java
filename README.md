@@ -1,15 +1,22 @@
 # Pr-ctica-02-POO-con-Java
 Practica02ProgramacionAplicada
+
  	PRÁCTICA DE LABORATORIO
+  
 PROGRAMACIÓN APLICADA
 
+
 CARRERA: Ing. En Computación	ASIGNATURA: Programación Aplicada
-NRO. PRÁCTICA:	2	TÍTULO PRÁCTICA:  Relaciones entre Clases 
+
+NRO. PRÁCTICA:	2
+
+TÍTULO PRÁCTICA:  Relaciones entre Clases 
 
 OBJETIVO ALCANZADO:	
 •	Modela aplicaciones de software mediante diagramas de clases
 •	Uso de herramientas online Lucid Chart
 •	Creación de código en NetBeans
+
 ACTIVIDADES DESARROLLADAS
 1.  Crear un repositorio en GitHub con el nombre “Práctica 02 – POO con Java” 
 
@@ -100,12 +107,16 @@ RESULTADO(S) OBTENIDO(S):
 •	El uso de la gran variedad de herramientas que nos proporciona el software GitHub junto con NetBeans nos hace dar cuenta que podemos realizar varios proyectos y poder compartirlos con los demás.
 •	El uso de diagramas en Lucid Chart no hace ver de forma mas amplia lo que luego será aplicado en el proyecto que realizaremos.
 •	Siendo así que los resultados obtenidos nos brindan un mayor desempeño e este software como lo es NetBeans.
+
 CONCLUSIONES:
 	Podemos decir que el uso de GitHub es una herramienta muy práctica pues hace que nuestros proyectos se encuentren al tanto de otras personas.
 	Como conclusión decimos que la práctica de Java es muy importante pues estando al tanto de las novedades desarrollamos un lenguaje de programación más factible.
 	Decimos entonces que la práctica de Clases y Objetos nos ayuda a desarrollar un código mucho más sencillo y eficaz pues estas nos hacen ver desde una perspectiva diferente el código.
+
 RECOMENDACIONES:
  	Como recomendación podemos decir que sí nos enfocamos mas al uso de Java debemos poner mas énfasis en la enseñanza que se nos da puesto que java nos proporciona muchas mas herramientas y hay que estar conscientes de todos estos usos que podemos darle. 
  	Java NetBeans es una herramienta excepcional para la implementación de códigos y programas, pero aun así con varias opciones aun por desarrollar.
+  
 Nombre de estudiante: Byron Simon Vásquez Saldaña
+
 Firma del estudiante: https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/frima.jpg
