@@ -13,7 +13,7 @@ OBJETIVO ALCANZADO:
 ACTIVIDADES DESARROLLADAS
 1.  Crear un repositorio en GitHub con el nombre “Práctica 02 – POO con Java” 
 
-![My image](VasquezB1.github.com/repository/Pr-ctica-02-POO-con-Java/1.jpg)
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/1.jpg
 
 
 
