@@ -1,4 +1,4 @@
-# Pr-ctica-02-POO-con-Java
+# Práctica-02-POO-con-Java
 Practica02ProgramacionAplicada
 
  	PRÁCTICA DE LABORATORIO
