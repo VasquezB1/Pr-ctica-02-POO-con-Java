@@ -20,17 +20,17 @@ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/1.jpg
 2.  Sincronizar el repositorio creado con un proyecto en NetBeans. Realizar un commit y push por cada requerimiento de los puntos a continuación descritos (incluir un mensaje que identifique claramente los commits realizados a GitHub). 
 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/2.jpg
 
 
 
 3.  Crear un paquete para las clases, otro para las interfaces, otro para las pruebas. 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/3.jpg
 
 4.  Crear una jerarquía de clases de tres niveles, es decir, una clase “abuelo”, dos clases “padres” y cuatro clases “hijas” (dos de cada padre). 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/4.jpg
 
 
 
@@ -38,21 +38,21 @@ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/1.jpg
 
 
  
- 
+ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/5.jpg
  
  
 
 6.  Cada clase padre debe tener por lo menos un método abstracto cada una. 
 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/7.jpg
 
 
 7.  Los métodos abstractos deben ser sobre escritos (implementados) en cada clase hija. 
 
 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/12.jpg
 
 
 
@@ -61,7 +61,7 @@ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/1.jpg
 
  
 
- 
+ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/8.jpg
 
  
  
@@ -72,18 +72,19 @@ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/1.jpg
  
 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/9.jpg
 
 
 
 10.  Crear una clase “Prueba”, en donde se demostrará el funcionamiento del proyecto. Además, se pide demostrar el uso de downcasting con el operador instanceof. También, se pide demostrar el uso de clases anónimas. 
 
 
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/10.jpg
 
 11.  Desarrollar el diagrama de clases correspondiente usando la herramienta LucidChart. 
 
 
-
+https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/Practica02.png
 
 
 
@@ -106,4 +107,5 @@ CONCLUSIONES:
 RECOMENDACIONES:
  	Como recomendación podemos decir que sí nos enfocamos mas al uso de Java debemos poner mas énfasis en la enseñanza que se nos da puesto que java nos proporciona muchas mas herramientas y hay que estar conscientes de todos estos usos que podemos darle. 
  	Java NetBeans es una herramienta excepcional para la implementación de códigos y programas, pero aun así con varias opciones aun por desarrollar.
-Nombre de estudiante: _____________________________
+Nombre de estudiante: Byron Simon Vásquez Saldaña
+Firma del estudiante: https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/frima.jpg
