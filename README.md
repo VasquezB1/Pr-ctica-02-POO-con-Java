@@ -98,7 +98,9 @@ https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java/blob/master/Practica02.png
 
 
 12.  Ubicación del Proyecto en GitHub
+
 Usuario: VasquezB1
+
 URL: https://github.com/VasquezB1/Pr-ctica-02-POO-con-Java
 
 
